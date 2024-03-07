@@ -4,18 +4,14 @@ import Weather from "../js/components/Weather.vue";
 
 const routes = [
     {
+        name: "home",
         path: "/",
         component: App,
-        children: [
-            {
-                path: "/welcome",
-                component: Welcome,
-            },
-            {
-                path: "/weather",
-                component: Weather,
-            },
-        ],
+    },
+    {
+        name: "Weather",
+        path: "/weather",
+        component: Weather,
     },
 ];
 

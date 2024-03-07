@@ -1,13 +1,15 @@
 <template>
-    <main>
-        <div>
-            <h1>This is Example Component</h1>
-        </div>
-    </main>
+    <div>
+        <h1>This is the content of ExampleComponent.vue</h1>
+    </div>
 </template>
 
 <script>
-import axios from "axios";
-
-export default {};
+export default {
+    name: "ExampleComponent",
+};
 </script>
+
+<style>
+/* Add your styles here if needed */
+</style>

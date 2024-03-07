@@ -6,9 +6,10 @@
 
 <script>
 export default {
-    mounted() {
-        console.log("Weather.vue mounted.");
-    },
+    name: "Weather",
 };
 </script>
 
+<style>
+/* Add your styles here if needed */
+</style>
