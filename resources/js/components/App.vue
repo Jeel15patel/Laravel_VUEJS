@@ -1,7 +1,38 @@
 <template>
-    <div>
-        <h1>This is the content of App.vue</h1>
-    </div>
+    <main>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <router-link to="/" class="navbar-brand" href="#">
+                    Laravel Vue Crud App
+                </router-link>
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-nav">
+                        <router-link
+                            exact-active-class="active"
+                            to="/"
+                            class="nav-item nav-link"
+                            >Home</router-link
+                        >
+                        <router-link
+                            exact-active-class="active"
+                            to="/weather"
+                            class="nav-item nav-link"
+                            >Weather</router-link
+                        >
+                        <router-link
+                            exact-active-class="active"
+                            to="/example"
+                            class="nav-item nav-link"
+                            >Example</router-link
+                        >
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <router-view></router-view>
+        </div>
+    </main>
 </template>
 
 <script>
@@ -9,7 +40,3 @@ export default {
     name: "App",
 };
 </script>
-
-<style>
-/* Add your styles here if needed */
-</style>

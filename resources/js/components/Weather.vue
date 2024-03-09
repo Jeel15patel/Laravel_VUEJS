@@ -1,15 +1,19 @@
 <template>
     <div>
-        <h1>Weather</h1>
+        <h1>Test</h1>
     </div>
 </template>
 
 <script>
 export default {
-    name: "Weather",
+    name: "weather",
+    data() {
+        return {
+            weather: "30 degree celcius",
+        };
+    },
 };
 </script>
-
-<style>
-/* Add your styles here if needed */
+<style scoped>
+/* Add scoped styles here if needed */
 </style>

@@ -1,18 +1,35 @@
-import App from "../js/components/App.vue";
-import Welcome from "../js/components/ExampleComponent.vue";
-import Weather from "../js/components/Weather.vue";
+import { omit } from "lodash";
+import App from "./components/App.vue";
+import ExampleComponent from "./components/ExampleComponent.vue";
+import Welcome from "./components/ExampleComponent.vue";
+import Weather from "./components/Weather.vue";
 
-const routes = [
+export const routes = [
     {
         name: "home",
         path: "/",
         component: App,
     },
     {
-        name: "Weather",
+        name: "weather",
         path: "/weather",
         component: Weather,
     },
+    {
+        name: "example",
+        path: "/example",
+        component: ExampleComponent,
+    },
 ];
-
-export default routes;
+// export const routes2 = [
+//     {
+//         name: "home",
+//         path: "/",
+//         component: App,
+//     },
+//     {
+//         name: "Weather",
+//         path: "/weather",
+//         component: Weather,
+//     },
+// ];
